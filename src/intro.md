@@ -1,13 +1,12 @@
-# Introduction
+# 介紹 Introduction
 
-## Quickstart
+## 快速上手 Quickstart
 
-In a hurry? Jump straight to [Getting Started](getting-started.md).
+趕時間嗎？請直接查看[新手上路 Getting Started](getting-started.md)。
 
-## Translations
+## 翻譯 Translations
 
-Volunteers have contributed translations of this manual. The
-translations may not always be up to date.
+志願者已將此使用手冊翻譯至多種語言。翻譯版本可能不是最新版本。請前往[英文原文](https://docs.ankiweb.net/)查看最新版本。
 
 - [Bahasa Indonesia](https://apps.ankiweb.net/docs/manual.id.html)
 - [Deutsch](http://www.dennisproksch.de/anki)
@@ -21,6 +20,4 @@ translations may not always be up to date.
 - [فارسى](http://ankidroid.ir/anki.pdf)
 - [日本語](http://wikiwiki.jp/rage2050/?FrontPage)
 - [简体中文](http://www.ankichina.net/manual/anki/)
-
-If you would like to help translate the manual into a different language,
-please see the [translation docs](https://translating.ankiweb.net/anki/manual.html).
+- [繁體中文](https://doomnor.github.io/anki-manual/)

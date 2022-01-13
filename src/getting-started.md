@@ -1,83 +1,67 @@
-# Getting Started
+# 新手上路 Getting Started
 
 <!-- toc -->
 
-## Installing & Upgrading
+## 安裝與升級 Installing & Upgrading
 
-Please see the instructions for your computer:
+請參閱你的電腦系統的安裝指示：
 
 - [Windows](./platform/windows/installing.md)
 - [Mac](./platform/mac/installing.md)
 - [Linux](./platform/linux/installing.md)
 
-## Videos
+## 影片 Videos
 
-For a quick way to dive into Anki, please have a look at these intro
-videos. Some were made with a previous Anki version, but the concepts
-are the same.
+以下影片將幫助您理解並上手使用 Anki。部分影片可能使用舊版 Anki，但概念是一樣的。
+(影片均為英文)
 
-- [Shared Decks and Review
-  Basics](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on)
+- [共用牌組和複習的基本操作](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on)
 
-- [Syncing](https://www.youtube.com/watch?v=YkiM4DPzSVc&list=PLGgmaKOIHykFoomqkBJAyGiDQ2kyiuTao&yt:cc=on)
+- [同步](https://www.youtube.com/watch?v=YkiM4DPzSVc&list=PLGgmaKOIHykFoomqkBJAyGiDQ2kyiuTao&yt:cc=on)
 
-- [Switching Card
-  Order](http://www.youtube.com/watch?v=DnbKwHEQ1mA&yt:cc=on)
+- [切換卡片順序](http://www.youtube.com/watch?v=DnbKwHEQ1mA&yt:cc=on)
 
-- [Styling Cards](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on)
+- [自訂卡片外觀](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on)
 
-- [Typing in the
-  Answer](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on)
+- [輸入回答問題](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on)
 
-If YouTube is unavailable in your country, you can [download the
-videos](https://apps.ankiweb.net/downloads/archive/screencasts/2.0/)
-instead.
+若你所在國家無法存取 YouTube，你可以[下載影片](https://apps.ankiweb.net/downloads/archive/screencasts/2.0/)。
 
-## Key Concepts
+## 核心概念 Key Concepts
 
-### Cards
+### 卡片 Cards
 
-A question and answer pair is called a 'card'. This is based on a paper
-flashcard with a question on one side and the answer on the back. In
-Anki a card doesn’t actually look like a physical card, and when you
-show the answer the question remains visible by default. For example, if
-you’re studying basic chemistry, you might see a question like:
+一組問題和答案稱為一張「卡片」(card)。跟紙質的閃卡 (flashcard) 一樣，一面
+寫著問題，一面寫著答案。Anki 中的卡片看起來跟實體的卡片不一樣，並且使用預設
+設定時，你可以同時看到問題面和答案面。例如，若你在學習基礎化學，遇到以下問題：
 
-    Q: Chemical symbol for oxygen?
+    Q: 氧氣的化學符號？
 
-After thinking about it, and deciding the answer is O, you click the
-show answer button, and Anki shows you:
+經過思考，並得出答案為 O 後，你按下「顯示答案」按鈕，Anki 將顯示如下：
 
-    Q: Chemical symbol for oxygen?
+    Q: 氧氣的化學符號？
     A: O
 
-After confirming that you are correct, you can tell Anki how well you
-remembered, and Anki will choose a next time to show you again.
+確定你得出的是正確答案後，你可以告訴 Anki 你記住得有多牢，而 Anki 將決定
+該卡片下一次為你顯示的時間。
 
-### Decks
+### 牌組 Decks
 
-A 'deck' is a group of cards. You can place cards in different decks to
-study parts of your card collection instead of studying everything at
-once. Each deck can have different settings, such as how many new cards
-to show each day, or how long to wait until cards are shown again.
+一個「牌組」(deck) 是一組卡片。你可以把卡片存放在不同的牌組中來學習你的
+集合 (collection) 中的一部分，而不是全部放在一起學習。每個牌組可以擁有不同的
+設定，例如每天要學習的新卡片，或是卡片再次出現的時機。
 
-Decks can contain other decks, which allows you to organize decks into a
-tree. Anki uses “::” to show different levels. A deck called
-“Chinese::Hanzi” refers to a “Hanzi” deck, which is part of a “Chinese”
-deck. If you select “Hanzi” then only the Hanzi cards will be shown; if
-you select “Chinese” then all Chinese cards, including Hanzi cards, will
-be shown.
+牌組可以包含子牌組，你可以用樹狀結構整理牌組。Anki 使用「::」來表示不同層級。
+牌組「英文::單字」表示「單字」牌組，它是「英文」牌組的一部分。若你選取「單字」，
+此時只有單字卡片會出現；若選「英文」，則全部的英文卡片，包括單字，將會出現。
 
-To place decks into a tree, you can either name them with “::” between
-each level, or drag and drop them from the deck list. Decks that have
-been nested under another deck (that is, that have at least one “::” in
-their names) are often called 'subdecks', and top-level decks are
-sometimes called 'superdecks' or 'parent decks'.
+要使用樹狀結構整理牌組，你可以在不同層級間加入「::」，或者在牌組列表中拖放牌組。
+在另一個牌組下的牌組 (即名稱中至少含有一個「::」的牌組)，常稱為子牌組 (subdeck)，
+而在上層的牌組有時稱為「superdeck」或「父牌組」(parent deck)。
 
-Anki starts with a deck called “default”; any cards which have somehow
-become separated from other decks will go here. Anki will hide the
-default deck if it contains no cards and you have added other decks.
-Alternatively, you may rename this deck and use it for other cards.
+一開始啟動 Anki 時，你將看到一個名為「default」的牌組；不包含於任何牌組的卡片
+將存放在那裡面。當 default 牌組中沒有卡片，且你已建立其他牌組時，Anki 會將其隱藏。
+另外，你也可以將它重新命名，並用來存放其他卡片。
 
 Decks are best used to hold broad categories of cards, rather than
 specific topics such as “food verbs” or “lesson 1”. For more info on
