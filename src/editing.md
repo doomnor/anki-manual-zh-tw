@@ -105,7 +105,7 @@ material that you are studying is a good choice here – things like "Japanese",
 "Trivia", and so on. Once you have chosen a name, close the Note Types
 window, and you will return to the adding window.
 
-## Customizing Fields
+## 自訂欄位 Customizing Fields
 
 To customize fields, click the "Fields…​" button when adding or editing
 a note, or while the note type is selected in the Manage Note Types
@@ -160,9 +160,9 @@ decks or manage your note types.
 
 ## Organizing Content
 
-### Using Decks Appropriately
+### 恰當運用牌組 Using Decks Appropriately
 
-[Decks](getting-started.md#decks) are designed to divide your content up into
+[Decks](getting-started.md#牌組-decks) are designed to divide your content up into
 broad categories that you wish to study separately, such as English, Geography,
 and so on. You may be tempted to create lots of little decks to keep your
 content organized, such as "my geography book chapter 1", or "food verbs", but

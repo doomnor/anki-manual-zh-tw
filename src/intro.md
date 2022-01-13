@@ -1,5 +1,9 @@
 # 介紹 Introduction
 
+**本使用手冊仍在翻譯中，歡迎到 [GitHub repo](https://github.com/doomnor/anki-manual) 參與貢獻 :)**
+
+正文翻譯進度：1/22
+
 ## 快速上手 Quickstart
 
 趕時間嗎？請直接查看[新手上路 Getting Started](getting-started.md)。
