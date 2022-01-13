@@ -51,9 +51,15 @@
 
 一開始啟動 Anki 時，你將看到一個名為「default」的牌組；不包含於任何牌組的卡片將存放在那裡面。當 default 牌組中沒有卡片，且你已建立其他牌組時，Anki 會將其隱藏。另外，你也可以將它重新命名，並用來存放其他卡片。
 
+<<<<<<< Updated upstream
 牌組適合用來分類某一大類卡片，而不是細分為小話題——像是「食物類動詞」或「第1課」。若欲瞭解更多資訊，請參閱[恰當運用牌組 (Using Decks Appropriately)](editing.md#恰當運用牌組-using-decks-appropriately) 部分。
 
 要瞭解更多關於牌組如何影響卡片出現順序的資訊，請見[顯示順序 (Display Order)](studying.md#顯示順序-display-order) 部分。
+=======
+牌組適合用來分類某一大類卡片，而不是細分為小話題——像是「食物類動詞」或「第1課」。若欲瞭解更多資訊，請參閱[恰當運用牌組 (Using Decks Appropriately)](editing.md#using-decks-appropriately) 部分。
+
+要瞭解更多關於牌組如何影響卡片出現順序的資訊，請見[顯示順序 (Display Order)](studying.md#display-order) 部分。
+>>>>>>> Stashed changes
 
 ### 筆記與欄位 Notes & Fields
 

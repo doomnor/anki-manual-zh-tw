@@ -6,7 +6,7 @@
 
 ## 快速上手 Quickstart
 
-趕時間嗎？請直接查看[新手上路 Getting Started](getting-started.md)。
+趕時間嗎？請直接查看[新手上路 (Getting Started)](getting-started.md)。
 
 ## 翻譯 Translations
 
