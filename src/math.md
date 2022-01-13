@@ -14,18 +14,18 @@ AnkiDroid 2.9+.
 
 To try it out:
 
-1.  Type the following in a field:
+1. Type the following in a field:
 
         \sqrt{x}
 
-2.  Select the text you just typed.
+2. Select the text you just typed.
 
-3.  Click the rightmost button in the editor, and choose "MathJax
+3. Click the rightmost button in the editor, and choose "MathJax
     inline" from the menu. Anki will change the text so it reads:
 
         \(\sqrt{x}\)
 
-4.  If you click the Cards…​ button, you’ll see a preview of how the
+4. If you click the Cards…​ button, you’ll see a preview of how the
     equation will appear when the card is reviewed.
 
 Anki’s MathJax support expects content in TeX format. If you’re not
@@ -42,8 +42,6 @@ Anki includes built in support for mhchem for rendering chemical
 equations. Please see the 'chemical equations' section and the following
 sections for more information:
 <https://mhchem.github.io/MathJax-mhchem/>
-
-It is possible to [customize some settings](https://faqs.ankiweb.net/customizing-mathjax.html).
 
 ## LaTeX
 
@@ -67,7 +65,7 @@ experience with LaTeX, please consult one of the many guides available
 on the internet. If you are having trouble with markup, please ask on a
 LaTeX forum.
 
-To install LaTeX, on Windows use MiKTeX; on macOS use MacTex, and on Linux
+To install LaTeX, on Windows use MiKTeX; on OSX use MacTex, and on Linux
 use your distro’s package manager. Dvipng must also be installed.
 
 On Windows, go to Settings in MikTek’s maintenance window, and make sure
@@ -76,7 +74,7 @@ first". If you continue to have difficulties, one user reported that
 running Anki as an administrator until all the packages were fetched
 helped.
 
-On macOS, LaTeX has only been tested with MacTex and BasicTex. If you use
+On OSX, LaTeX has only been tested with MacTex and BasicTex. If you use
 BasicTex, you need to install dvipng separately, with the following
 command:
 
@@ -270,7 +268,7 @@ following note text will read `[type] in C++ is a type-safe union`:
 
     {{c1::std:<!-- -->:variant::~type~}} in C++ is a {{c2::type-safe union}}
 
-### Unsafe Commands
+### Unsafe commands
 
 Anki prohibits certain commands like \\input or \\def from being used on
 cards or in templates, because allowing them could allow malicious

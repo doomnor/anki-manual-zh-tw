@@ -109,13 +109,11 @@ trying to import cards whose content contains angle brackets or other
 HTML syntax.
 
 If you wish to use HTML for formatting your file but also wish to
-include angle brackets or ampersands, you may use the following replacements:
+include angle brackets, you may write them differently:
 
-| Character | Replacement |
-|-|-|
-| &lt; | `&lt;` |
-| &gt; | `&gt;` |
-| &amp; | `&amp;` |
+- For "&lt;", use "&amp;lt;"
+
+- For "&gt;", use "&amp;gt;"
 
 ### Importing Media
 

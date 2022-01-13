@@ -119,7 +119,7 @@ find notes in a field starting with "fr". Requires Anki 2.1.24+ or AnkiMobile 2.
 ## Tags, decks, cards and notes
 
 `tag:animal`  
-find notes with the tag "animal", or subtags like "animal::mammal"
+find notes with the tag "animal"
 
 `tag:none`  
 find notes with no tags
@@ -252,15 +252,6 @@ cards with a green flag
 `flag:4`  
 cards with a blue flag
 
-`flag:5`  
-cards with a pink flag
-
-`flag:6`  
-cards with a turquoise flag
-
-`flag:7`  
-cards with a purple flag
-
 ## Card properties
 
 `prop:ivl>=10`  
@@ -327,7 +318,7 @@ Rating searches had been limited to 31 days before version 2.1.39.
 
 ### First Answered
 
-On version 2.1.45+, you can also search for the very first review only:
+On version 2.1.43+, you can also search for the very first review only:
 
 `introduced:1`  
 cards answered for the first time today
@@ -392,8 +383,8 @@ a minimum of escaping is required to prevent ambiguity:
 `nid:123`  
 all cards of the note with note id 123
 
-`cid:123,456,789`  
-all cards with card ids 123, 456 or 789
+`cid:123`  
+the card with card id 123
 
 Note and card IDs can be found in the [card info](stats.md) dialog in the
 browser. These searches may also be helpful when doing add-on

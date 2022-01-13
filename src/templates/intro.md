@@ -1,4 +1,4 @@
-# 卡片模板 Card Templates
+# Card Templates
 
 Card templates tell Anki which fields should appear on the front and back of your card,
 and control which cards will be generated when certain fields have text in them.
@@ -52,5 +52,5 @@ options:
 
 - The 'Browser Appearance' option allows you to set different (perhaps
     simplified) templates for display in the Question and Answer columns
-    of the browser; see [browser appearance](styling.md#browser-appearance) for more
+    of the browser; see [browser appearance](templates/styling.md#browser-appearance) for more
     information.

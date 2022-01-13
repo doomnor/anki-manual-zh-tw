@@ -11,20 +11,27 @@ Study in Anki is limited to the currently selected deck as well as any
 subdecks it contains.
 
 On the decks screen, your decks will be displayed in a list. There are
-three columns. 'New' is the number of new
-cards that are ready to be learnt that day. The second column shows
-the number of cards currently in learning. 'Due' is the count of waiting
-reviews. 
+two number columns, 'due' and 'new'. 'Due' is the count of waiting
+reviews and cards currently in learning. 'New' is the number of new
+cards that are ready to be learnt that day.
 
 When you click on a deck, it will become the 'current deck', and Anki
 will change to the study screen. You can return to the deck list to
 change the currently selected deck at any time by clicking on “Decks” at
 the top of the main window. (You can also use the Study
 Deck action in the menu to select a new deck from the keyboard, or you
-can press the <kbd>s</kbd> key to study the currently selected deck.)
+can press the ‘s’ key to study the currently selected deck.)
 
 You can click the gears button to the right of a deck to rename or
-delete a deck, change its [options](deck-options.md), or [export](exporting.md) it.
+delete a deck, change its options, or [export](exporting.md) it.
+
+With the old scheduler, when a deck has subdecks, the cards will appear from [each deck in
+turn](studying.md#display-order).
+
+With the [new scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
+when a deck has subdecks, reviews are now taken from all children decks
+at once. The review limit of the child decks is ignored - only the limit of the
+deck you clicked on applies.
 
 ## Study Overview
 
@@ -45,7 +52,7 @@ To start a study session, click the **Study Now** button. Anki will
 proceed to show you cards until the cards to be shown for the day have
 run out.
 
-While studying, you can return to the overview by pressing the <kbd>s</kbd> key
+While studying, you can return to the overview by pressing the “s” key
 on your keyboard.
 
 ## Questions
@@ -63,32 +70,32 @@ you don’t trust yourself to compare your answer accurately, you can ask
 Anki to [prompt you to type in the answer](templates/fields.md#checking-your-answer) rather than
 just showing it to you.
 
-## Learning/Relearning Cards
+The number of buttons available for grading depends on whether the card
+is being 'learnt' or 'reviewed'.
+
+## Learning
 
 When learning new cards, or when relearning cards that you have
 forgotten, Anki will show you the cards one or more times to help you
 memorize them. Each time is called a 'learning step'. By default there
 are two steps: 1 minute and 10 minutes. You can change the number of
-steps and the delays between them in the [deck options](deck-options.md#new-cards).
+steps and the delays between them in the [deck options](deck-options.md).
 
-There are four rating buttons when learning:
+There are three rating buttons when learning:
 
 **Again** moves the card back to the first step.
 
-**Hard**  repeats the current step after the first step, and is the average 
-of Again and Good on the first step.
-
-**Good** moves the card to the [next step](deck-options.md#learning-steps). If the card was on the final
+**Good** moves the card to the next step. If the card was on the final
 step, the card is converted into a review card (it 'graduates'). By
 default, once the card has reached the end of the learning steps, the
 card will be shown again the next day, then at increasingly long delays
 (see the next section).
 
 **Easy** immediately converts the card into a review card, even if there
-were steps remaining. [By default](deck-options.md#easy-interval), the card will be shown again 4 days
-later, and then at increasingly long delays. In the v1 scheduler, the "Easy" button will not be
-shown if you are in relearning mode as it would give the same interval
-as “Good.” With the [v2 scheduler+](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
+were steps remaining. By default, the card will be shown again 4 days
+later, and then at increasingly long delays. In the old scheduler, the "Easy" button will not be
+shown if you are in relearning mode and it would give the same interval
+as “Good.” With the [new scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
 when cards are in relearning, the "Easy" button boosts the interval by 1 day.
 
 When cards are seen for the first time, they start at step one. This
@@ -96,16 +103,16 @@ means answering **Good** on a card for the first time will show it one
 more time in 10 minutes, and the initial 1 minute step will be skipped.
 If you push Again, though, the card will come back in 1 minute.
 
-You can use the <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> and <kbd>4</kbd> keys on your keyboard to select a particular
-button, where <kbd>1</kbd> is **Again**. Pressing <kbd>Space</kbd> or <kbd>Enter</kbd> will select
+You can use the 1, 2 and 3 keys on your keyboard to select a particular
+button, where 1 is **Again**. Pressing the spacebar will select
 **Good**.
 
 If there are no other cards to show you, Anki will show learning cards
 again even if their delay has not elapsed completely. If you’d prefer to
-wait the full learning delay, you can change this behaviour in 
-[Preferences>Scheduling>Learn Ahead Limit](preferences.md).
+wait the full learning delay, you can change this behaviour in the
+[preferences](preferences.md).
 
-## Review Cards
+## Reviewing
 
 When a card has been previously learnt and is ready to be reviewed
 again, there are four buttons to rate your answer:
@@ -115,59 +122,48 @@ more frequently in the future. The card is said to have 'lapsed'. Please
 see the [lapses](deck-options.md#lapses) section for more information about how lapsed
 reviews are handled.
 
-**Hard** by default, shows the card at a [slightly longer delay](deck-options.md#hard-interval) 
-than last time, and tells Anki to show the card more frequently in the future.
+**Hard** shows the card at a slightly longer delay than last time, and
+tells Anki to show the card more frequently in the future.
 
 **Good** tells Anki that the last delay was about right, and the card
-easiness doesn’t need to be adjusted down or up. At the [default starting
-easiness](deck-options.md#starting-ease), the card will be shown again approximately 2 1/2 times longer
+easiness doesn’t need to be adjusted down or up. At the default starting
+easiness, the card will be shown again approximately 2 1/2 times longer
 than the previous time, so if you had waited 10 days to see the card
 previously, the next delay would be about 25 days.
 
 **Easy** tells Anki you found the delay too short. The card will be
-scheduled [further into the future than 'Good'](deck-options.md#easy-bonus), and Anki will schedule
+scheduled further into the future than 'Good', and Anki will schedule
 the card less frequently in the future. Because 'Easy' rapidly increases
 the delay, it’s best used for only the easiest of cards. Usually you
 should find yourself answering 'Good' instead.
 
-As with learning cards, you can use <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> and <kbd>4</kbd> on the keyboard to select an
-answer. Pressing the <kbd>spacebar</kbd> or <kbd>Enter</kbd> will select **Good**.
+As with learning cards, you can use 1-4 on the keyboard to select an
+answer. Pressing the spacebar will select 'Good'.
 
-See [Deck Options](deck-options.md) and the [FAQ](https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html)
-to learn more about how the algorithm works. 
-
-## Due Counts 
+## Due Counts
 
 When only the question is shown, Anki shows three numbers like 12 + 34 +
 56 at the bottom of the screen. These represent the new cards, cards in
 learning, and cards to review. If you’d prefer not to see the numbers,
 you can turn them off in Anki’s preferences.
 
-In the v1 scheduler, the numbers count _reviews_ needed to finish all the
+In the old scheduler, the numbers count _reviews_ needed to finish all the
 cards in that queue, not the number of _cards_. If you have multiple
 steps configured for lapsed cards, the number will increase by more than
 one when you fail a card, since that card needs to be shown several times.
 
-From the v2 scheduler, the numbers count _cards_, so the number will always
+In the new scheduler, the numbers count _cards_, so the number will always
 increase by one regardless of the steps remaining.
 
 When the answer is shown, Anki shows an estimate of the next time a card
 will be shown above each button. If you’d prefer not to see the
 estimates, you can disable them in Anki’s [preferences](preferences.md).
 
-## Fuzz Factor
-
-When you select an ease button on a review card, Anki also applies a small amount of random “fuzz”
-to prevent cards that were introduced at the same time and given the same ratings
-from sticking together and always coming up for review on the same day. This fuzz
-will appear on the answer buttons when the [v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html) is enabled, so if
-you are using a previous version and you’re noticing a slight discrepancy between
-what you select and the intervals your cards actually get, this is probably the
-cause.
-
-Learning cards are also given up to 5 minutes of extra delay so that they 
-don’t always appear in the same order, but answer buttons won't reflect that. It 
-is not possible to turn this feature off.
+Anki additionally adds a small amount of random variation to the next
+due times, in order to prevent cards that were introduced together and
+always rated the same from always staying next to each other. This
+variation is not shown on the time estimates but will be applied after
+selecting the button.
 
 ## Editing and More
 
@@ -179,86 +175,65 @@ At the bottom right of the review screen is a button labeled **More**.
 This button provides some other operations you can do on the current
 card or note:
 
-- [**Flag Card**](editing.md#using-flags): Adds a colored marker to the card, or toggles it off. Flags will appear during
+**Flag Card**: Adds a colored marker to the card, or toggles it off. Flags will appear during
 study, and you can search for flagged cards in the Browse screen. This is useful
 when you want to take some action on the card at a later date, such as looking
-up a word when you get home. If you're using Anki 2.1.45+, you can also rename flags 
-from the [browser](browsing.md).    
+up a word when you get home.
 
-- **Bury Card / Note**: Hides a card or all of the note’s cards from review until the next day.
+**Mark Note**: Adds a “marked” tag to the current note, so it can be easily found in the
+browser. This is similar to flagging individual cards, but works with a tag
+instead, so if the note has multiple cards, all cards will appear in a search
+for the marked tag. Most users will want to use flags instead - marking is
+mainly left around for compatibility with older Anki versions.
+
+**Bury Card / Note**: Hides a card or all of the note’s cards from review until the next day.
 (If you want to unbury cards before then, you can click the “unbury”
 button on the [deck overview](studying.md#study-overview) screen.) This is useful if
 you cannot answer the card at the moment or you want to come back to it
 another time. Burying can also [happen automatically](studying.md#siblings-and-burying) for
 cards of the same note.
 
-   With the old scheduler, if cards were in learning when they are buried,
-   they are moved back to the new card queue or review queue prior to being
-   buried.
+With the old scheduler, if cards were in learning when they are buried,
+they are moved back to the new card queue or review queue prior to being
+buried.
 
-   With the [2.1 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
-   however, burying cards does not reset a card's learning steps.
+With the [new scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
+however, burying cards does not reset a card's learning steps.
 
-- **Set Due Card**: Make cards review cards, and [make them due on a certain date.](browsing.md#cards)
+**Suspend Card / Note**: Hides a card or all of the note’s cards from review until they are
+manually unsuspended (by clicking the suspend button in the browser).
+This is useful if you want to avoid reviewing the note for some time,
+but don’t want to delete it.
 
-- **Suspend Card / Note**: Hides a card or all of the note’s cards from review until they are
-   manually unsuspended (by clicking the suspend button in the browser).
-   This is useful if you want to avoid reviewing the note for some time,
-   but don’t want to delete it.
-   With the old scheduler, if cards were in learning when they are
-   suspended, they are moved back to the new card queue or review queue
-   prior to being suspended.
+With the old scheduler, if cards were in learning when they are
+suspended, they are moved back to the new card queue or review queue
+prior to being suspended.
 
-   With the [2.1 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
-   however, suspending cards does not reset a card's learning steps.
+With the [new scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
+however, suspending cards does not reset a card's learning steps.
 
-- **Options**: Edit the [options](deck-options.md) for the current deck.
+**Delete Note**: Deletes the note and all of its cards.
 
-- **Card Info**: Displays [statistical information](stats.md#card-info) about the card.
+**Options**: Edit the options for the current deck.
 
-- [**Mark Note**](editing.md#the-marked-tag): Adds a “marked” tag to the current note, so it can be easily found in the
-browser. This is similar to flagging individual cards, but works with a tag
-instead, so if the note has multiple cards, all cards will appear in a search
-for the marked tag. Most users will want to use flags instead. 
+**Replay Audio**: If the card has audio on the front or back, play it again.
 
-- **Delete Note**: Deletes the note and all of its cards.
-
-- **Replay Audio**: If the card has audio on the front or back, play it again.
-
-- **Pause Audio**: Pauses the audio if it is playing.
-
-- **Audio -5s / +5s**: Jump backwards / forward 5 seconds in the currently playing audio.
-
-- **Record Own Voice**: Record from your microphone for the purposes of checking your
+**Record Own Voice**: Record from your microphone for the purposes of checking your
 pronunciation. This recording is temporary and will go away when you
 move to the next card. If you want to add audio to a card permanently,
 you can do that in the edit window.
 
-- **Replay Own Voice**: Replay the previous recording of your voice (presumably after showing
+**Replay Own Voice**: Replay the previous recording of your voice (presumably after showing
 the answer).
 
-## 顯示順序 Display Order
+## Display Order
 
 Studying will show cards from the selected deck and any decks it
 contains. Thus, if you select your “French” deck, the subdecks
 “French::Vocab” and “French::My Textbook::Lesson 1” will be shown as
 well.
 
-The way Anki fetches cards from the decks depends on the algorithm used:
-
-- With the v1 scheduler, when a deck has subdecks, the cards will appear from [each deck in
-turn](studying.md#display-order).
-
-- With the [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
-when a deck has subdecks, reviews are taken from all children decks
-at once. The review limit of the child decks is ignored - only the limit of the
-deck you clicked on applies.
-
-- With the [v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html)
-each child deck's limit is also enforced, and you do not need to see the cards 
-in deck order either. See the [deck options](deck-options.md#review-sort-order) section of the manual for more information.
-
-By default, for new cards, Anki fetches cards from the decks in
+For new cards and reviews, Anki fetches cards from the decks in
 alphabetical order. So in the above example, you would get cards first
 from “French”, then “My Textbook”, and finally “Vocab”. You can use this
 to control the order cards appear in, placing high priority cards in
@@ -305,10 +280,6 @@ Anki will only bury siblings that are new or review cards. It will not
 hide cards in learning, as time is of the essence for those cards. On
 the other hand, when you study a learning card, any new/review siblings
 will be buried.
-
-Note: A card cannot be buried and suspended at the same time. Suspending a
-buried card will unbury it. Burying a suspended card does not work on Anki
-2.1.49+, whereas on earlier versions, it will unsuspend the card.
 
 ## Keyboard Shortcuts
 

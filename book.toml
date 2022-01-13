@@ -1,9 +1,9 @@
 [book]
-authors = ["Ankitects Pty Ltd 及其他貢獻者"]
-language = "zh-tw"
+authors = ["Ankitects Pty Ltd and contributors"]
+language = "en"
 multilingual = false
 src = "src"
-title = "Anki 使用手冊"
+title = "Anki Manual"
 
 [build]
 create-missing = true
@@ -13,15 +13,11 @@ command = "mdbook-toc"
 renderer = ["html"]
 
 [output.html]
-git-repository-url = "https://github.com/doomnor/anki-manual"
-additional-css = ["css/kbd.css"]
+git-repository-url = "https://github.com/ankitects/anki-manual/"
+cname = "docs.ankiweb.net"
+additional-css = ["css/kbd.css", "css/toc.css"]
 
-[output.linkcheck]
-optional = true
-warning-policy = "warn"
-follow-web-links = true
-exclude = [ 'microsoft.com' ]
-
-[output.html.fold]
-enable = true
-level = 0
+#[output.linkcheck]
+#optional = true
+#warning-policy = "warn"
+#follow-web-links = true

@@ -48,38 +48,20 @@ note type (and opens the add window to the last-used note type when you choose
 Add). This may be more convenient if you always use a single note type for each
 deck.
 
-**Default search text**
-Allows you to customize the starting search text in the browser (eg, to start 
-with "deck:current").
-
-**User interface size**
-If you find that the interface elements are too small for you, you can 
-try to increase this setting.  
-
 ## Scheduling
-
-**Show next review time above answer buttons**  
-Useful to know how far in the future your cards are being pushed.
-
-**Show remaining card count during review**  
-Disable this option to hide the card count at the bottom of the screen.
 
 **Show learning cards with larger steps before**  
 Only shown when the 2.1 scheduler is enabled. Normally learning cards with a 1+
 day delay are shown after normal reviews. If checked, Anki will show them before
 normal reviews instead.
 
-**Legacy timezone handling**  
-Please see here:
-<https://faqs.ankiweb.net/timezone-handling-changes.html>
-
-**V3 Scheduler**  
-The Anki V3 scheduler is documented here:  
-<https://faqs.ankiweb.net/the-2021-scheduler.html>
+**Anki 2.1 scheduler**  
+The Anki 2.1 scheduler is documented here:
+<https://faqs.ankiweb.net/the-anki-2.1-scheduler.html>
 
 **Mix new cards and reviews**:
-Only shown when the v1/v2 schedulers are enabled. This drop-down box controls when
-new cards are shown: either mixed with, before, or after all reviews.
+This drop-down box controls when new cards are shown: either mixed
+with, before, or after all reviews.
 
 **Next day starts at**  
 Controls when Anki should start showing the next day’s cards. The default
@@ -87,8 +69,6 @@ setting of 4AM ensures that if you’re studying around midnight, you won’t ha
 two days' worth of cards shown to you in one session. If you stay up very late
 or wake up very early, you may want to adjust this to a time you’re usually
 sleeping. Note that the start of the next day is relative to your current timezone.
-Also note that any cards that cross a day boundary [will appear at the start of 
-the day they are scheduled for](./deck-options.md#day-boundaries), just like review cards do. 
 
 **Learn ahead limit**  
 Tells Anki how to behave when there is nothing left to study in the current deck

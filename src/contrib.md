@@ -12,17 +12,13 @@ If you shared a deck previously (including with previous versions of
 Anki), you can update it by clicking "Share" as above. Updating a shared
 deck will not reset the download counts or ratings. You can delete a
 shared deck that you have uploaded using the Delete button on the shared
-deck's page.
+deck’s page.
 
 When updating a deck, AnkiWeb expects the deck to be at the same
 location as before. If you shared a deck when it was called "Korean
 Verbs" for example, and then renamed it to "Korean::Korean Verbs",
-resharing will not be able to update the existing copy. If you have
-forgotten the original name, you can guess it by downloading the
-deck on ankiweb and importing it (File > Import) in a new profile
-(File > Switch profile > Add). Then you can copy the exact name of the
-deck when it was first shared. If this doesn't work, please contact 
-support.
+resharing will not be able to update the existing copy. If you’ve
+forgotten the original name, please contact support.
 
 When you update a shared deck, users who downloaded the deck previously
 will not automatically receive updates. If they download the deck again
@@ -60,7 +56,7 @@ them about it.
 
 ## Sharing Add-ons
 
-Please see <https://addon-docs.ankiweb.net/sharing.html>
+Please see <https://addon-docs.ankiweb.net/#/sharing>
 
 ## Translating Anki
 
@@ -68,7 +64,7 @@ Please see <https://translating.ankiweb.net>
 
 ## Contributing Code
 
-Anki's source code is available at <https://github.com/ankitects/anki>
+Anki’s source code is available at <https://github.com/ankitects/anki>
 
 Before contributing, please see the README.contributing file in that
 repo.
