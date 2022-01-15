@@ -13,7 +13,7 @@ command = "mdbook-toc"
 renderer = ["html"]
 
 [output.html]
-git-repository-url = "https://github.com/doomnor/anki-manual"
+git-repository-url = "https://github.com/doomnor/anki-manual-zh-tw"
 additional-css = ["css/kbd.css"]
 
 [output.linkcheck]

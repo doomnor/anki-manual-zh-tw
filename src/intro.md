@@ -1,6 +1,6 @@
 # 介紹 Introduction
 
-**本使用手冊仍在翻譯中，歡迎到 [GitHub repo](https://github.com/doomnor/anki-manual) 參與貢獻 :)**
+**本使用手冊仍在翻譯中，歡迎到 [GitHub repo](https://github.com/doomnor/anki-manual-zh-tw) 參與貢獻 :)**
 
 正文翻譯進度：1/22
 
@@ -24,4 +24,4 @@
 - [فارسى](http://ankidroid.ir/anki.pdf)
 - [日本語](http://wikiwiki.jp/rage2050/?FrontPage)
 - [简体中文](http://www.ankichina.net/manual/anki/)
-- [繁體中文](https://doomnor.github.io/anki-manual/)
+- [繁體中文](https://doomnor.github.io/anki-manual-zh-tw/)
