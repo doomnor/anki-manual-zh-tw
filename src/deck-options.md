@@ -282,7 +282,7 @@ This section is only available when you have [the v3
 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html) enabled.
 
 Some further information about display order is available in the [studying
-section](studying.md#display-order).
+section](studying.md#顯示順序-display-order).
 
 ### New Card Gather Priority
 

@@ -135,7 +135,7 @@ appear when reviewing: to do that, please see the
 answer" function, however, the text you type will use the font size
 defined here. (For information about how to change the actual font face
 when typing the answer, please see the [checking your
-answer](templates/fields.md#checking-your-answer) section.)
+answer](templates/fields.md#檢查答案-checking-your-answer) section.)
 
 **Sort by this field…​** tells Anki to show this field in the Sort Field
 column of the browser. You can use this to sort cards by that field.
@@ -197,7 +197,7 @@ but using tags have a big advantage over decks for that: you can add several
 tags to a single note, but a single card can only belong to one deck, which 
 makes tags a more powerful and flexible categorization system than 
 decks in most cases. You can also organize tags in trees [in the same way
-as you can do for decks](getting-started.md#decks).
+as you can do for decks](getting-started.md#牌組-decks).
 
 For example, instead of creating a "food verbs" deck, you could add those 
 cards to your main language study deck, and tag the cards with "food" and
@@ -207,7 +207,7 @@ food-related vocabulary, or all verbs that are related to food.
 
 You can add tags from the Edit window and from the [Browser](browsing.md), and you can also add,
 delete, rename, or organize tags there. Please note that
-tags work at [note](getting-started.md#notes--fields) level, which means that when you tag a card that has siblings,
+tags work at [note](getting-started.md#筆記與欄位-notes--fields) level, which means that when you tag a card that has siblings,
 all the siblings will be tagged as well. If you need to tag a single card,
 but not its siblings, you should consider using flags instead.
 
@@ -218,7 +218,7 @@ window, showing a colored flag icon on the upper right area of the screen.
 You can also search for flagged cards in the Browse screen, rename flags 
 from the browser and create filtered decks from flagged cards, but unlike tags, 
 a single card can have only one flag at a time. Another important difference
-is that flags work at [card](getting-started.md#cards) level, so flagging a card that have siblings 
+is that flags work at [card](getting-started.md#卡片-cards) level, so flagging a card that have siblings 
 won't have any effect on the card's siblings. 
 
 You can flag / unflag cards directly while in review mode (by pressing 
@@ -263,7 +263,7 @@ marks or fields are better.
 The editor is shown when [adding notes](editing.md), [editing a
 note](studying.md) during reviews, or [browsing](browsing.md).
 
-On the top left are two buttons, which open the [fields](editing.md#customizing-fields) and
+On the top left are two buttons, which open the [fields](editing.md#自訂欄位-customizing-fields) and
 [cards](templates/intro.md) windows.
 
 On the right are buttons that control formatting. Bold, italic and
@@ -377,7 +377,7 @@ When the card comes up for review, it will appear as:
     [city] was founded in 1913.
 
 For information on testing your ability to type in a cloze deletion
-correctly, please see the section on [typing answers](templates/fields.md#checking-your-answer).
+correctly, please see the section on [typing answers](templates/fields.md#檢查答案-checking-your-answer).
 
 Please note that overlapping clozes are not supported. For example, the
 following field is invalid:

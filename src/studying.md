@@ -60,7 +60,7 @@ and show the answer than keep struggling to remember.
 When the answer is shown, you should compare the answer you thought of
 with the answer which is shown and tell Anki how well you remembered. If
 you don’t trust yourself to compare your answer accurately, you can ask
-Anki to [prompt you to type in the answer](templates/fields.md#checking-your-answer) rather than
+Anki to [prompt you to type in the answer](templates/fields.md#檢查答案-checking-your-answer) rather than
 just showing it to you.
 
 ## Learning/Relearning Cards
@@ -247,7 +247,7 @@ well.
 The way Anki fetches cards from the decks depends on the algorithm used:
 
 - With the v1 scheduler, when a deck has subdecks, the cards will appear from [each deck in
-turn](studying.md#display-order).
+turn](studying.md#顯示順序-display-order).
 
 - With the [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
 when a deck has subdecks, reviews are taken from all children decks
