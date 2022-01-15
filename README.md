@@ -1,4 +1,4 @@
-Anki Manual in Traditional Chinese, translated from [original texts](https://github.com/ankitects/anki-manual).
+Anki Manual in Traditional Chinese, translated from [original manual](https://github.com/ankitects/anki-manual).
 
 Anki 使用手冊繁體中文翻譯。
 
